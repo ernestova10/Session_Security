@@ -5,11 +5,13 @@ public class UsuarioInsertDTO {
     private String nombre;
     private String password1;
     private String password2;
+    private String rol;
 
-    public UsuarioInsertDTO(String nombre, String password1, String password2) {
+    public UsuarioInsertDTO(String nombre, String password1, String password2, String rol) {
         this.nombre = nombre;
         this.password1 = password1;
         this.password2 = password2;
+        this.rol = rol;
     }
 
     public UsuarioInsertDTO(){}
@@ -36,5 +38,13 @@ public class UsuarioInsertDTO {
 
     public void setPassword2(String password2) {
         this.password2 = password2;
+    }
+
+    public String getRol() {
+        return rol;
+    }
+
+    public void setRol(String rol) {
+        this.rol = rol;
     }
 }

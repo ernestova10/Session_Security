@@ -26,6 +26,7 @@ dependencies {
 	providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+	implementation ("org.springframework.security:spring-security-crypto:5.8.2")
 }
 
 tasks.withType<Test> {
